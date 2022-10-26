@@ -13,7 +13,7 @@ const App = () => {
           <Route
             path={item.route}
             component={item.components}
-            exact
+            exact={item.exact ? true : false}
             key={`route${index}`}
           />
         ))}
