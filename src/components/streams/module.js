@@ -9,30 +9,30 @@ export const Stream = [
     name: "StreamList",
     route: "/",
     components: StreamList,
-    exact:true
+    exact: true,
   },
   {
     name: "StreamCreate",
     route: "/streams/new",
     components: StreamCreate,
-    exact:true
+    exact: true,
   },
   {
     name: "StreamEdit",
-    route: "/streams/edit",
+    route: "/streams/edit/:id",
     components: StreamEdit,
-    exact:true
+    exact: true,
   },
   {
     name: "StreamDelete",
     route: "/streams/delete",
     components: StreamDelete,
-    exact:true
+    exact: true,
   },
   {
     name: "StreamShow",
     route: "/streams/show",
     components: StreamShow,
-    exact:true
+    exact: true,
   },
 ];

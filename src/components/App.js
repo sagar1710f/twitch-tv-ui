@@ -1,5 +1,6 @@
 import React from "react";
-import { BrowserRouter, Route } from "react-router-dom";
+import { Route, Router } from "react-router-dom";
+import history from "../history";
 
 import Header from "./Header";
 import { Stream } from "./streams/module";
@@ -7,7 +8,7 @@ import { Stream } from "./streams/module";
 const App = () => {
   return (
     <div className="ui container">
-      <BrowserRouter>
+      <Router history={history}>
         <Header />
         {Stream.map((item, index) => (
           <Route
@@ -17,7 +18,7 @@ const App = () => {
             key={`route${index}`}
           />
         ))}
-      </BrowserRouter>
+      </Router>
     </div>
   );
 };
