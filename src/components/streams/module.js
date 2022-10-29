@@ -31,7 +31,7 @@ export const Stream = [
   },
   {
     name: "StreamShow",
-    route: "/streams/show",
+    route: "/streams/:id",
     components: StreamShow,
     exact: true,
   },
