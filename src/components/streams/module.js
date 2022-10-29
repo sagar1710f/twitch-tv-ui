@@ -25,7 +25,7 @@ export const Stream = [
   },
   {
     name: "StreamDelete",
-    route: "/streams/delete",
+    route: "/streams/delete/:id",
     components: StreamDelete,
     exact: true,
   },
